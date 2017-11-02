@@ -6,7 +6,7 @@ stage ("BUILD"){
    sh 'mvn clean compile package'
 }
 stage ("Deploy"){
-   sh 'mvn Deploy'
+   sh 'mvn deploy'
 }
 stage ("Test"){
    echo 'build'
